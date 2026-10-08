@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { PageId } from "../types";
 import { Menu, X, ArrowUpRight } from "lucide-react";
-import logoImage from "../assets/branding/advay-engineers-transparent.png";
+import logoAsset from "../assets/branding/advay-engineers-symbol.png.asset.json";
 
 interface HeaderProps {
   currentPage: PageId;
@@ -53,13 +53,16 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate, onOpenQ
             className="flex items-center gap-3 text-left focus:outline-none group cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
           >
             <img
-              src={logoImage}
+              src={logoAsset.url}
               alt="Advay Engineers logo"
               className="w-14 h-14 shrink-0 object-contain"
             />
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-[#0B2545] group-hover:text-[#8B1E1E] transition-colors whitespace-nowrap">
                 ADVAY ENGINEERS
+              </span>
+              <span className="text-[10px] tracking-widest text-[#8B1E1E] uppercase font-semibold -mt-1">
+                Redefine Excellence
               </span>
             </div>
           </button>
