@@ -1,0 +1,12 @@
+{
+  "source": "code-archive",
+  "capabilities": [
+    {"capability":"website code and routes","source":"static-site-masterpiece.zip","outcome":"preserve","status":"pending","next_action":"Import original TanStack pages without redesign"},
+    {"capability":"index.html","source":"archive root","outcome":"preserve","status":"pending","next_action":"Keep byte-identical root index.html"},
+    {"capability":"images and fonts","source":"archive bundled bytes and pointers","outcome":"preserve","status":"pending","next_action":"Rehost bundled media and verify remaining pointers"},
+    {"capability":"logo","source":"1000239034.jpg","outcome":"use exact upload","status":"pending","next_action":"Replace logo pointer with uploaded image"},
+    {"capability":"database, records, auth identities and authorization","source":"static archive manifest","outcome":"not detected","status":"pending","next_action":"Confirm application callsites"},
+    {"capability":"external providers, forms, endpoints, callbacks, webhooks, schedules, secrets and cutover","source":"application callsites","outcome":"inspect and preserve","status":"pending","next_action":"Audit source behavior"},
+    {"capability":"verification","source":"live preview","outcome":"verify","status":"pending","next_action":"Check every route, images and representative interactions"}
+  ]
+}
