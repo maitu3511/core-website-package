@@ -606,7 +606,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                     <ChevronLeft className="w-4 h-4" />
                     <span>
                       {activeProcessStep > 0
-                        ? `Step ${PROCESS_STAGES[activeProcessStep - 1].step}: ${PROCESS_STAGES[activeProcessStep - 1].title}`
+                        ? `Step ${PROCESS_STAGES[activeProcessStep - 1]?.step}: ${PROCESS_STAGES[activeProcessStep - 1]?.title}`
                         : "Beginning (Step 01)"}
                     </span>
                   </button>
@@ -622,7 +622,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenQuote }) =
                   >
                     <span>
                       {activeProcessStep < PROCESS_STAGES.length - 1
-                        ? `Next: Step ${PROCESS_STAGES[activeProcessStep + 1].step} ${PROCESS_STAGES[activeProcessStep + 1].title}`
+                        ? `Next: Step ${PROCESS_STAGES[activeProcessStep + 1]?.step} ${PROCESS_STAGES[activeProcessStep + 1]?.title}`
                         : "Completed (Step 07)"}
                     </span>
                     <ChevronRight className="w-4 h-4" />
