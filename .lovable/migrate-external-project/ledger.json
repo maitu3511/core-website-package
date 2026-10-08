@@ -1,12 +1,54 @@
 {
   "source": "code-archive",
   "capabilities": [
-    {"capability":"website code and routes","source":"static-site-masterpiece.zip","outcome":"preserve","status":"pending","next_action":"Import original TanStack pages without redesign"},
-    {"capability":"index.html","source":"archive root","outcome":"preserve","status":"pending","next_action":"Keep byte-identical root index.html"},
-    {"capability":"images and fonts","source":"archive bundled bytes and pointers","outcome":"preserve","status":"pending","next_action":"Rehost bundled media and verify remaining pointers"},
-    {"capability":"logo","source":"1000239034.jpg","outcome":"use exact upload","status":"pending","next_action":"Replace logo pointer with uploaded image"},
-    {"capability":"database, records, auth identities and authorization","source":"static archive manifest","outcome":"not detected","status":"pending","next_action":"Confirm application callsites"},
-    {"capability":"external providers, forms, endpoints, callbacks, webhooks, schedules, secrets and cutover","source":"application callsites","outcome":"inspect and preserve","status":"pending","next_action":"Audit source behavior"},
-    {"capability":"verification","source":"live preview","outcome":"verify","status":"pending","next_action":"Check every route, images and representative interactions"}
+    {
+      "capability": "website code and routes",
+      "source": "static-site-masterpiece.zip",
+      "outcome": "preserve",
+      "status": "verified",
+      "next_action": "None"
+    },
+    {
+      "capability": "index.html",
+      "source": "archive root",
+      "outcome": "preserve",
+      "status": "verified",
+      "next_action": "None"
+    },
+    {
+      "capability": "images and fonts",
+      "source": "archive bundled bytes and pointers",
+      "outcome": "preserve",
+      "status": "verified",
+      "next_action": "None"
+    },
+    {
+      "capability": "logo",
+      "source": "1000239034.jpg",
+      "outcome": "use exact upload",
+      "status": "verified",
+      "next_action": "None"
+    },
+    {
+      "capability": "database, records, auth identities and authorization",
+      "source": "static archive manifest",
+      "outcome": "not detected",
+      "status": "verified",
+      "next_action": "None"
+    },
+    {
+      "capability": "external providers, forms, endpoints, callbacks, webhooks, schedules, secrets and cutover",
+      "source": "application callsites",
+      "outcome": "Preserved WhatsApp quote/contact links, email, telephone, social links and Google Maps. No APIs, callbacks, webhooks, schedules or secret-dependent services detected. File selection retains original filename-only behavior. No deployment requested.",
+      "status": "verified",
+      "next_action": "None"
+    },
+    {
+      "capability": "verification",
+      "source": "live preview",
+      "outcome": "Eight pages render; all image bytes load; no browser runtime errors; navigation and both WhatsApp form targets checked without sending; routing test passes; build OK.",
+      "status": "verified",
+      "next_action": "None"
+    }
   ]
 }

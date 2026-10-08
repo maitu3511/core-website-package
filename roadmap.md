@@ -5,4 +5,4 @@
 - [x] Retain byte-identical root index.html.
 - [x] Use exact uploaded logo.
 - [x] Recover and rehost original images and fonts.
-- [ ] Verify all pages, image loading, navigation and quote/contact behavior.
+- [x] Verify all pages, image loading, navigation and quote/contact behavior.
