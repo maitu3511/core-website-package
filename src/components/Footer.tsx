@@ -2,7 +2,7 @@ import React from "react";
 import { PageId } from "../types";
 import { COMPANY_INFO } from "../data/companyData";
 import { Phone, Mail, MapPin } from "lucide-react";
-import logoImage from "../assets/branding/advay-engineers-transparent.png";
+import logoAsset from "../assets/branding/advay-engineers-symbol.png.asset.json";
 
 interface FooterProps {
   onNavigate: (page: PageId) => void;
@@ -24,13 +24,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenQuote }) => {
           <div>
             <div className="flex items-center gap-3 mb-3">
               <img
-                src={logoImage}
+                src={logoAsset.url}
                 alt="Advay Engineers logo"
                 className="w-14 h-14 shrink-0 object-contain"
               />
               <div className="flex flex-col">
                 <span className="text-lg font-bold tracking-tight text-[#0B2545]">
                   {COMPANY_INFO.name}
+                </span>
+                <span className="text-[10px] tracking-widest text-[#8B1E1E] uppercase font-semibold">
+                  {COMPANY_INFO.tagline}
                 </span>
               </div>
             </div>
